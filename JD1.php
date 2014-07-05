@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<?php session_start();?>
 <html>
 <head>
 <title>
@@ -6,6 +7,7 @@ JD's Joy of PHP
 </title>
 </head>
 <body>
+<?php include 'variables.php';?>
 <h1>Hello World!</h1>
 <p>Todays Date is the <?php echo date('jS \o\f F Y');?></p>
 <p><?php
@@ -53,5 +55,14 @@ Pick Your Favourite Colour:<br>
 </tr>
 </table>
 <br>
+<p><a href="#top">Go to TOP of Page</a></p>
+<?php
+$big=100;
+$small=10;
+if($big>$small)
+{echo "Bigger is better";}
+else
+{echo "Size doesn't matter";}
+?>
 </body>
 </html>
