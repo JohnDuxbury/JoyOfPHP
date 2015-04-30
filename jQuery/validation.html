@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Joy of jQuery - Form Validation Example</title>
+<script src="jquery.min.js"></script>
+  <script src="jquery.validate.js"></script>
+ 
+   <style type="text/css">
+    * { font-family: Arial; }
+    label { width: 10em; float: left; }
+    label.error { float: none; color: red; padding-left: .5em; vertical-align: top; }
+    div { clear: both; }
+    input, textarea { width: 15em; }
+    .submit { margin-left: 10em; }
+  </style>
+  <script type="text/javascript">
+    jQuery(document).ready(function($){
+      $("#comments").validate();
+    });
+  </script>
+</head>
+<body>
+  <form id="comments" method="get" action="">
+    <fieldset>
+      <legend>A simple form with basic validation and messages</legend>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" class="required" minlength="2" />
+      </div>
+      <div>
+        <label for="email">E-Mail</label>
+        <input id="email" name="email" class="required email" />
+      </div>
+      <div>
+        <label for="url">URL (optional)</label>
+        <input id="url" name="url" class="url" value="" />
+      </div>
+      <div>
+        <label for="comment">Your comment</label>
+        <textarea id="comment" name="comment" class="required"></textarea>
+      </div>
+      <div>
+        <input class="submit" type="submit" value="Submit"/>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
+    

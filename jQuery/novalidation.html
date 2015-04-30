@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <style type="text/css">
+    * { font-family: Arial; }
+    label { width: 10em; float: left; }    
+    input, textarea { width: 15em; }
+    .submit { margin-left: 13em; margin-top: 2em;}
+  </style>
+<title>Joy of jQuery - Basic Form without validation</title>
+ </head>
+<body>
+  <form id="comments" method="get" action="">
+    <fieldset>
+      <legend>A simple form with no validation or messages</legend>
+      <div>
+        <label for="name">Name</label>
+        <input id="name" name="name" />
+      </div>
+      <div>
+        <label for="email" style="height: 1px">E-Mail</label>
+        <input id="email" name="email" />
+      </div>
+      <div>
+        <label for="url">URL (optional)</label>
+        <input id="url" name="url" class="url" value="" />
+      </div>
+      <div>
+        <label for="ccomment">Your comment</label>
+        <textarea id="ccomment" name="comment"></textarea>
+      </div>
+      <div>
+        <input class="submit" type="submit" value="Submit"/>
+      </div>
+    </fieldset>
+  </form>
+</body>
+</html>
+    

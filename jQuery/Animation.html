@@ -1,0 +1,56 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+<title>Joy of jQuery - Autocomplete</title>
+<script src="jquery.min.js">
+</script>
+<script> 
+$(document).ready(function(){
+  $("#flip").click(function(){
+    $("#panel").slideToggle("slow");
+  });
+  
+   $("button").click(function(){
+    $("#Logo").animate({
+      left:'250px',
+      opacity:'0.5',
+      height:'150px',
+      width:'150px'
+    }, "slow");
+  });
+  
+});
+</script>
+ 
+<style type="text/css"> 
+#panel,#flip
+{
+padding:5px;
+text-align:center;
+background-color:lightyellow;
+border:solid 1px #c3c3c3;
+}
+#panel
+{
+padding:50px;
+display:none;
+}
+</style>
+</head>
+<body>
+ <h1>Joy of jQuery  - Sam's Over-Animated Used Cars</h1>
+
+<div id="flip">Click to see your dream car</div>
+<div id="panel">
+Rolls Royce Convertible<br>Exterior Color: Midnight 
+Sapphire<br>Interior Color: Seashell<br>Stock #: R177<br>
+<br>Fuel: Gasoline<br>Engine: 6.8L V12 48V GDI DOHC<br>Transmission: 8-Speed 
+Automatic<p><img alt="Rolls Royce Interior" height="266" src="Rolls.jpg" width="400"></p>
+
+</div>
+<br><br><button>Start Animation</button><br><br>
+<div id="Logo" style="background:yellow;height:75px;width:100px;position:absolute;text-align:center">
+Sam's <br>Used<br>Cars
+</div>
+</body>
+</html>
