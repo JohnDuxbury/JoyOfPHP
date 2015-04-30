@@ -1,0 +1,108 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Joy of jQuery</title>
+	  <meta name="viewport" content="width=device-width, initial-scale=1" /> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.css" />
+    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.3.2/jquery.mobile-1.3.2.min.js"></script>
+
+
+
+  <!-- to avoid header text from being 
+       truncated overwrite the margin -->
+  <style type="text/css">
+    .ui-header .ui-title {
+     margin-right: 10%;
+     margin-left: 10%;
+   }
+  </style>
+</head> 
+<body> 
+
+<div data-role="page" id="mainPage" data-theme="b">
+
+	<div data-role="header" data-theme="b">
+
+		<h4>Sam's Used Cars</h4>
+	</div>
+	<div data-role="content">	
+	  <ul data-role="listview" data-inset="true" data-filter="true">
+	    <li><a href="#Acura" data-transition="slide">Acura</a></li>
+	    <li><a href="#BMW" data-transition="slide">BMW</a></li>
+	    <li><a href="#Chevy" data-transition="slide">Chevrolet</a></li>
+	    <li><a href="#Dodge" data-transition="slide">Dodge</a></li>
+      </ul>
+	</div>
+	<div data-role="footer" data-theme="b">
+
+  	  <h4>Sam's Used Cars</h4>
+    </div>		
+</div>
+
+<div data-role="page" id="Acura">
+  <div data-role="header" data-theme="b">
+
+  	<a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+    <h1>Acura</h1>
+  </div>
+  <div data-role="content">
+    <img border="0" src="img/acura.jpg" />
+      <p>Sam just got a new shipment of Acuras for you!  These babies are going fast so don't delay...</p>
+  </div>		
+  <div data-role="footer" data-theme="b">
+
+    <h4>Call Sam now!</h4>
+  </div>		
+</div>
+
+
+<div data-role="page" id="BMW">
+  <div data-role="header" data-theme="b">
+
+  	<a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+    <h1>BMW</h1>
+  </div>
+  <div data-role="content">
+    <img border="0" src="img/bmw.jpg"/>
+  <p>Guys-- you'll always get the girl when behind the wheel of the ultimate driving machine.</p><p> Sam has an excellent selection of quality used BMWs</p>
+  </div>		
+  <div data-role="footer" data-theme="b">
+    <h4>Call Sam @ 555-1212</h4>
+  </div>		
+</div>
+
+<div data-role="page" id="Chevy">
+  <div data-role="header">
+  	<a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+    <h1>Chevrolet</h1>
+  </div>
+  <div data-role="content">
+    <img border="0" src="img/chevy.jpg"/>
+      <p>The perfect vehicles for big families on a budget. Sam has an excellent selection of quality used Chevrolets</p>
+
+  </div>		
+  <div data-role="footer">
+    <h4>Call Sam Today!</h4>
+  </div>		
+</div>
+
+<div data-role="page" id="Dodge" data-theme="e">
+
+  <div data-role="header" data-theme="e">
+
+  	<a data-rel="back" data-direction="reverse" href="#mainPage">Back</a>
+    <h1>Dodge</h1>
+  </div>
+  <div data-role="content">
+    <img border="0" src="img/dodge.jpg" />
+     <p>The perfect vehicles for big families on a budget. Sam has an excellent selection of quality used Chevrolets</p>
+
+  </div>		
+  <div data-role="footer" data-theme="e">
+    <h4>Sam loves Dodge!</h4>		
+</div>
+</div>
+</body>
+</html>
