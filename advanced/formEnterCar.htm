@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Joy of PHP</title>
+<style>
+    .box{
+	border: 1px solid #ccc; margin:auto; padding:10px; width:440px;
+	-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;background-color:#FFFFFF;-webkit-box-shadow: #B3B3B3 17px 17px 17px;-moz-box-shadow: #B3B3B3 17px 17px 17px; box-shadow: #B3B3B3 17px 17px 17px;
+    }
+</style>
+</head>
+
+<body>
+<div class="box">
+<center><h1>Sam's Used Cars</h1></center>
+</div>
+<form action="SubmitCar.php" method="post">
+	<center>
+	<div class="box">
+	<b><u>VIN:</u></b><br /><input name="VIN" type="text" />
+	
+	<hr>
+	
+	<table>
+	<tr>
+	<td>		
+	<b><u>Year:</u></b><br /><input name="Year" type="text" />
+	<td>
+	<b><u>Make:</u></b><br />
+	<select name=Make>
+	<option value="Ford">Ford</option>
+	<option value="Chrysler">Chrysler</option>
+	<option value="Honda">Honda</option>
+	<option value="Hyundai">Hyundai</option>
+	<option value="Toyota">Toyota</option>
+	<option value="Mazda">Mazda</option>
+	<option value="Audi">Audi</option>
+	<option value="Saab">Saab</option>
+	<option value="Mercedes">Mercedes</option>
+	<option value="Chevrolet">Chevrolet</option>
+	</select>
+	<td>
+	<b><u>Model:</u></b><br /><input name="Model" type="text" />
+	</tr>
+	</table>
+	
+	<hr>
+	
+	<b><u>Trim:</u></b><br /><input name="Trim" type="text" /><br />
+	<br />
+	
+	<b><u>Asking Price:</u></b><br /><input name="Asking_Price" type="text" /><br />
+	<br />
+	
+	<b><u>Purchase Price:</u></b><br /><input name="Purchase_Price" type="text" /><br />
+	<br />
+	
+	
+	<b><u>Mileage:</u></b><br /><input name="Mileage" type="text" /><br />
+	<br />
+	
+	<b><u>Transmission:</u></b><br />
+	<select name=Transmission>
+	<option value="Manual">Manual</option>
+	<option value="Automatic">Automatic 5 speed</option>
+	<option value="4WD">4WD</option>
+	<option value="AWD">AWD</option>
+	</select>
+	
+	<hr>
+	
+	<table>
+	<tr>
+	<td>		
+	<b><u>External Color(s):</u></b><br /><input name="ext_color" type="text" />
+	<td>
+	<b><u>Internal Color:</u></b><br /><input name="int_color" type="text" />
+	</tr>
+	</table>
+	
+	<hr>
+	
+	<input name="Submit1" type="submit" value="Add car" /><br />
+	&nbsp;</form>
+</div>
+	</center>
+</body>
+
+</html>

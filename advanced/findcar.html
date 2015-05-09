@@ -1,0 +1,47 @@
+<html>
+<head>
+<title>Sam's Used Cars</title>
+<style>
+    .box{
+	border: 1px solid #ccc; margin:auto; padding:10px; width:440px;
+	-webkit-border-radius: 20px;-moz-border-radius: 20px;border-radius: 20px;background-color:#FFFFFF;-webkit-box-shadow: #B3B3B3 17px 17px 17px;-moz-box-shadow: #B3B3B3 17px 17px 17px; box-shadow: #B3B3B3 17px 17px 17px;
+    }
+</style>
+</head>
+
+<body background="" background="#ffffff">
+<form action=FindCar.php method=get>
+
+<div class="box">
+<center><h1>Sam's Used Cars</h1></center>
+</div>
+
+<center>
+<div class=box>
+
+    <b><u>Make:</u></b><br />
+	<select name=make>
+	<option value="Ford">Ford</option>
+	<option value="Chrysler">Chrysler</option>
+	<option value="Honda">Honda</option>
+	<option value="Hyundai">Hyundai</option>
+	<option value="Toyota">Toyota</option>
+	<option value="Mazda">Mazda</option>
+	<option value="Audi">Audi</option>
+	<option value="Saab">Saab</option>
+	<option value="Mercedes">Mercedes</option>
+	<option value="Chevrolet">Chevrolet</option>
+	</select>
+	
+	<H2>OR</H2>
+	
+	<b><u>Maximum Price:</u></b><br /><input name="maxprice" type="text" /><br />
+	<br />
+	
+	<input type=submit value="Search">
+	
+</div>
+</center>
+</form>
+</body>
+</html>
